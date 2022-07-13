@@ -9,7 +9,7 @@ using namespace std;
 
 class passengers{
     private:
-    vector<passenger*> TotalPassengers;
+    vector<passenger> TotalPassengers;
     string ListName;
 
     public:
