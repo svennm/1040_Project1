@@ -18,7 +18,7 @@ class passengers{
     void Add(passenger p);
     void PrintSize();
     void PrintAll();
-    void FindEntry(string);
+    void FindEntry(int n) ;
 
 };
 #endif

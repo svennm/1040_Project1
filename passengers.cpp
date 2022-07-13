@@ -1,5 +1,6 @@
 #include "passengers.h"
 #include <iterator>
+#include <algorithm>
 passengers::passengers(){
 
 }
@@ -47,17 +48,7 @@ void passengers::PrintAll(){
     }
 }
 
-void passengers::FindEntry(string n){
-    
-    cout << "Please Input Passenger Name: ";
-    getline(cin, n);
-    vector<passenger>::iterator it;
-    passenger* ptr;
-    unsigned i = 0;
-    for(it = TotalPassengers.begin(); it != TotalPassengers.end(); it++, i++) {
-
-
-
-
-}
+void passengers::FindEntry(int n){
+    it = find(TotalPassengers.begin(),TotalPassengers.end(), n);
+    cout <<*it <<endl;
 }
