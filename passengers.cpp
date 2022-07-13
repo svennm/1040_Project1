@@ -49,6 +49,7 @@ void passengers::PrintAll(){
 }
 
 void passengers::FindEntry(int n){
+    vector<passenger>::iterator it;
     it = find(TotalPassengers.begin(),TotalPassengers.end(), n);
-    cout <<*it <<endl;
+    cout << *it <<endl;
 }
